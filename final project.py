@@ -79,7 +79,8 @@ while True:
                               "3.Display Student\n"
                               "4.Get Student Average\n"
                               "5.Add Course to student with mark.\n"
-                              "6.Exit"))
+                              "6.Exit\n"
+                              "Enter Your Selection : "))
 
         if selection == 1:
 
@@ -93,7 +94,10 @@ while True:
                     break
                 except:
                     print("Invalid Value")
+            is_existing = any(student.student_number == student_number for student in students)
 
+            if is_existing:
+                print("Student Number already exists.")
             # TODO 11 create student object and append it to students list
 
             print("Student Added Successfully")
