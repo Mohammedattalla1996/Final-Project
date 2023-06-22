@@ -99,7 +99,9 @@ while True:
             if is_existing:
                 print("Student Number already exists.")
             # TODO 11 create student object and append it to students list
-
+            else:
+                student = Student(student_name, student_age, student_number)
+                students.append(student)
             print("Student Added Successfully")
 
         elif selection == 2:
