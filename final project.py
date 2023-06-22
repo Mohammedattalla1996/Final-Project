@@ -48,13 +48,17 @@ class Student:
 
     # method to get_student_courses
     def get_student_courses(self):
-        # TODO 6 print student courses with their marks
-        pass
+# TODO 6 print student courses with their marks
+        for course in self.courses_list:
+            print("Course ID:" , course.course_id)
+            print("Course Name :", course.course_name)
+            print("Course Mark :", course.course_mark)
 
     # method to get student_average as a value
     def get_student_average(self):
-        # TODO 7 return the student average
         pass
+# TODO 7 return the student average
+
 
 
 # in Global Scope
